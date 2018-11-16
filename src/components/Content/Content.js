@@ -12,7 +12,6 @@ class Content extends React.Component {
               id="f2778003"
               className="select select_orig"
               name="order"
-              onchange="document.location.href='/utility-graphicscards/s.php?alias=utility&alias2=graphicscards&&order=' + this.value"
               onfocus="this.style.color='#333333';"
               onblur="this.style.color='#333333';"
             >
@@ -36,19 +35,16 @@ class Content extends React.Component {
             <ul>
               <li>
                 <span
-                  data-url="/utility-graphicscards/s.php?alias=utility&alias2=graphicscards&&viewmode=standart"
                   className="st1 active"
                 />
               </li>
               <li>
                 <span
-                  data-url="/utility-graphicscards/s.php?alias=utility&alias2=graphicscards&&viewmode=table"
                   className="st2"
                 />
               </li>
               <li>
                 <span
-                  data-url="/utility-graphicscards/s.php?alias=utility&alias2=graphicscards&&viewmode=list"
                   className="st3"
                 />
               </li>
@@ -57,17 +53,9 @@ class Content extends React.Component {
         </section>
         <section className="items">
           <span
-            data-infocategoryid={419}
-            data-compareselectedtext="\u0441\u0440\u0430\u0432\u043D\u0438\u0442\u044C \u0432\u044B\u0431\u0440\u0430\u043D\u043D\u044B\u0435"
-            data-selectminproductstext="\u0432\u044B\u0431\u0435\u0440\u0438\u0442\u0435 \u043C\u0438\u043D\u0438\u043C\u0443\u043C 2 \u0442\u043E\u0432\u0430\u0440\u0430"
-            data-compareurl="/utility-graphicscards/"
-            data-errorminprodutstext="\u041D\u0435\u043E\u0431\u0445\u043E\u0434\u0438\u043C\u043E \u0432\u044B\u0431\u0440\u0430\u0442\u044C \u043C\u0438\u043D\u0438\u043C\u0443\u043C 2 \u0442\u043E\u0432\u0430\u0440\u0430"
-            data-errormaxproductstext="\u0414\u043B\u044F \u0441\u0440\u0430\u0432\u043D\u0435\u043D\u0438\u044F \u043C\u043E\u0436\u043D\u043E \u0432\u044B\u0431\u0440\u0430\u0442\u044C \u043D\u0435 \u0431\u043E\u043B\u0435\u0435 20 \u0442\u043E\u0432\u0430\u0440\u043E\u0432"
-            data-comparetext="%d \u0442\u043E\u0432\u0430\u0440 \u0432 \u0441\u0440\u0430\u0432\u043D\u0435\u043D\u0438\u0438;%d \u0442\u043E\u0432\u0430\u0440\u0430 \u0432 \u0441\u0440\u0430\u0432\u043D\u0435\u043D\u0438\u0438;%d \u0442\u043E\u0432\u0430\u0440\u0430 \u0432 \u0441\u0440\u0430\u0432\u043D\u0435\u043D\u0438\u0438"
           />
           <section className="banner">
             <div
-              id="admixer_6482a7d65da249ab8626da598fe25c50_zone_9362_sect_2567_site_2271"
               style={{
                 margin: "0px auto",
                 position: "relative",
@@ -134,9 +122,6 @@ class Content extends React.Component {
                     <input
                       className="checkbox cbx_inp"
                       name="compareproductsids"
-                      data-productid={2700043}
-                      data-categoryid={419}
-                      defaultValue={1}
                       type="checkbox"
                     />
                     <i />
