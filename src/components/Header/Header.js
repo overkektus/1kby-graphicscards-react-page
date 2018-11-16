@@ -8,6 +8,7 @@ class Header extends React.Component {
           <img
             className="logo_pic logo_pic-by"
             src="https://1k.by/Templates/standard/images/b-logo_img_by.png"
+            alt="logo"
           />
         </a>
         {}

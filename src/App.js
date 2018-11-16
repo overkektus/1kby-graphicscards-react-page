@@ -1,15 +1,12 @@
-import React, { Component } from 'react';
-import Header from './components/Header'
-import Main from './components/Main'
-import Footer from './components/Footer'
+import React, { Component } from 'react'
+import { renderRoutes } from 'react-router-config'
 
 class App extends Component {
   render() {
+    const { route: { routes } } = this.props
     return (
       <div>
-        <Header />
-        <Main />
-        <Footer />
+        {renderRoutes(routes)}
       </div>
     );
   }
