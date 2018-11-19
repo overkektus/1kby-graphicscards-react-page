@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 
 class Product extends React.Component {
   render() {
@@ -102,8 +102,8 @@ class Product extends React.Component {
           </section>
         </section>
       </section>
-    );
+    )
   }
 }
 
-export default Product;
+export default Product

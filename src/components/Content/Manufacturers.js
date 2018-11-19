@@ -1,0 +1,514 @@
+import React, { Component } from 'react'
+
+class Manufacturers extends Component {
+  render() {
+    return(
+      <section className="brends">
+        <div className="slick  slick-initialized slick-slider">
+          <button
+            className="slick-prev slick-arrow"
+            aria-label="Previous"
+            type="button"
+            style={{
+              display: "block"
+            }}
+          >
+                      
+          </button>
+          <div className="slick-list draggable">
+            <div
+              className="slick-track"
+              style={{
+                opacity: 1,
+                width: "70000px",
+                transform: "translate3d(-134px, 0px, 0px)"
+              }}
+            >
+              <div
+                className="slide slick-slide slick-cloned"
+                data-slick-index={-1}
+                aria-hidden="true"
+                tabIndex={-1}
+              >
+                <a
+                  href="https://1k.by/usersshops/gotoshop?shopid=16&categoryid=419"
+                  tabIndex={-1}
+                >
+                  <img
+                    src="https://1k.by/images/site/shopslogo/sf0ffb27ac.gif"
+                    alt="UltraPrice"
+                  />
+                </a>
+              </div>
+              <div
+                className="slide slick-slide slick-current slick-active"
+                data-slick-index={0}
+                aria-hidden="false"
+                tabIndex={0}
+              >
+                <a
+                  href="https://1k.by/usersshops/gotoshop?shopid=2641&categoryid=419"
+                  tabIndex={0}
+                >
+                  <img
+                    src="https://1k.by/images/site/shopslogo/s3a58591bc.png"
+                    alt="BelBeznal.by"
+                  />
+                </a>
+              </div>
+              <div
+                className="slide slick-slide"
+                data-slick-index={1}
+                aria-hidden="true"
+                tabIndex={-1}
+              >
+                <a
+                  href="https://1k.by/usersshops/gotoshop?shopid=802&categoryid=419"
+                  tabIndex={-1}
+                >
+                  <img
+                    src="https://1k.by/images/site/shopslogo/saa5cbdcb3.png"
+                    alt="amd.by"
+                  />
+                </a>
+              </div>
+              <div
+                className="slide slick-slide"
+                data-slick-index={2}
+                aria-hidden="true"
+                tabIndex={-1}
+              >
+                <a
+                  href="https://1k.by/usersshops/gotoshop?shopid=3267&categoryid=419"
+                  tabIndex={-1}
+                >
+                  <img
+                    src="https://1k.by/images/site/shopslogo/s06fecea98.gif"
+                    alt="Force"
+                  />
+                </a>
+              </div>
+              <div
+                className="slide slick-slide"
+                data-slick-index={3}
+                aria-hidden="true"
+                tabIndex={-1}
+              >
+                <a
+                  href="https://1k.by/usersshops/gotoshop?shopid=6777&categoryid=419"
+                  tabIndex={-1}
+                >
+                  <img
+                    src="https://1k.by/images/site/shopslogo/s176046755.png"
+                    alt="\u0415-\u0422\u0435\u0445\u043D\u043E"
+                  />
+                </a>
+              </div>
+              <div
+                className="slide slick-slide"
+                data-slick-index={4}
+                aria-hidden="true"
+                tabIndex={-1}
+              >
+                <a
+                  href="https://1k.by/usersshops/gotoshop?shopid=209&categoryid=419"
+                  tabIndex={-1}
+                >
+                  <img
+                    src="https://1k.by/images/site/shopslogo/s4a4a04628.png"
+                    alt="Ram.by"
+                  />
+                </a>
+              </div>
+              <div
+                className="slide slick-slide"
+                data-slick-index={5}
+                aria-hidden="true"
+                tabIndex={-1}
+              >
+                <a
+                  href="https://1k.by/usersshops/gotoshop?shopid=338&categoryid=419"
+                  tabIndex={-1}
+                >
+                  <img
+                    src="https://1k.by/images/site/shopslogo/sfe2e7f703.gif"
+                    alt="21vek.by"
+                  />
+                </a>
+              </div>
+              <div
+                className="slide slick-slide"
+                data-slick-index={6}
+                aria-hidden="true"
+                tabIndex={-1}
+              >
+                <a
+                  href="https://1k.by/usersshops/gotoshop?shopid=669&categoryid=419"
+                  tabIndex={-1}
+                >
+                  <img
+                    src="https://1k.by/images/site/shopslogo/s97544bf4a.gif"
+                    alt="TTN.by"
+                  />
+                </a>
+              </div>
+              <div
+                className="slide slick-slide"
+                data-slick-index={7}
+                aria-hidden="true"
+                tabIndex={-1}
+              >
+                <a
+                  href="https://1k.by/usersshops/gotoshop?shopid=2302&categoryid=419"
+                  tabIndex={-1}
+                >
+                  <img
+                    src="https://1k.by/images/site/shopslogo/sa8478f082.gif"
+                    alt="BITS.By"
+                  />
+                </a>
+              </div>
+              <div
+                className="slide slick-slide"
+                data-slick-index={8}
+                aria-hidden="true"
+                tabIndex={-1}
+              >
+                <a
+                  href="https://1k.by/usersshops/gotoshop?shopid=7037&categoryid=419"
+                  tabIndex={-1}
+                >
+                  <img
+                    src="https://1k.by/images/site/shopslogo/s93b55d78a.jpg"
+                    alt="24shop.by"
+                  />
+                </a>
+              </div>
+              <div
+                className="slide slick-slide"
+                data-slick-index={9}
+                aria-hidden="true"
+                tabIndex={-1}
+              >
+                <a
+                  href="https://1k.by/usersshops/gotoshop?shopid=406&categoryid=419"
+                  tabIndex={-1}
+                >
+                  <img
+                    src="https://1k.by/images/site/shopslogo/s8804bff4e.gif"
+                    alt="SLI.BY"
+                  />
+                </a>
+              </div>
+              <div
+                className="slide slick-slide"
+                data-slick-index={10}
+                aria-hidden="true"
+                tabIndex={-1}
+              >
+                <a
+                  href="https://1k.by/usersshops/gotoshop?shopid=439&categoryid=419"
+                  tabIndex={-1}
+                >
+                  <img
+                    src="https://1k.by/images/site/shopslogo/sc0eaa3688.jpg"
+                    alt="\u0418\u043D\u0432\u043E\u043A\u043E\u043C"
+                  />
+                </a>
+              </div>
+              <div
+                className="slide slick-slide"
+                data-slick-index={11}
+                aria-hidden="true"
+                tabIndex={-1}
+              >
+                <a
+                  href="https://1k.by/usersshops/gotoshop?shopid=784&categoryid=419"
+                  tabIndex={-1}
+                >
+                  <img
+                    src="https://1k.by/images/site/shopslogo/sb73d24571.jpg"
+                    alt="\u041D\u0418\u041A\u0421"
+                  />
+                </a>
+              </div>
+              <div
+                className="slide slick-slide"
+                data-slick-index={12}
+                aria-hidden="true"
+                tabIndex={-1}
+              >
+                <a
+                  href="https://1k.by/usersshops/gotoshop?shopid=2250&categoryid=419"
+                  tabIndex={-1}
+                >
+                  <img
+                    src="https://1k.by/images/site/shopslogo/s3e57a0875.gif"
+                    alt="\u0421\u0432\u044F\u0437\u043D\u043E\u0439"
+                  />
+                </a>
+              </div>
+              <div
+                className="slide slick-slide"
+                data-slick-index={13}
+                aria-hidden="true"
+                tabIndex={-1}
+              >
+                <a
+                  href="https://1k.by/usersshops/gotoshop?shopid=16&categoryid=419"
+                  tabIndex={-1}
+                >
+                  <img
+                    src="https://1k.by/images/site/shopslogo/sf0ffb27ac.gif"
+                    alt="UltraPrice"
+                  />
+                </a>
+              </div>
+              <div
+                className="slide slick-slide slick-cloned"
+                data-slick-index={14}
+                aria-hidden="true"
+                tabIndex={-1}
+              >
+                <a
+                  href="https://1k.by/usersshops/gotoshop?shopid=2641&categoryid=419"
+                  tabIndex={-1}
+                >
+                  <img
+                    src="https://1k.by/images/site/shopslogo/s3a58591bc.png"
+                    alt="BelBeznal.by"
+                  />
+                </a>
+              </div>
+              <div
+                className="slide slick-slide slick-cloned"
+                data-slick-index={15}
+                aria-hidden="true"
+                tabIndex={-1}
+              >
+                <a
+                  href="https://1k.by/usersshops/gotoshop?shopid=802&categoryid=419"
+                  tabIndex={-1}
+                >
+                  <img
+                    src="https://1k.by/images/site/shopslogo/saa5cbdcb3.png"
+                    alt="amd.by"
+                  />
+                </a>
+              </div>
+              <div
+                className="slide slick-slide slick-cloned"
+                data-slick-index={16}
+                aria-hidden="true"
+                tabIndex={-1}
+              >
+                <a
+                  href="https://1k.by/usersshops/gotoshop?shopid=3267&categoryid=419"
+                  tabIndex={-1}
+                >
+                  <img
+                    src="https://1k.by/images/site/shopslogo/s06fecea98.gif"
+                    alt="Force"
+                  />
+                </a>
+              </div>
+              <div
+                className="slide slick-slide slick-cloned"
+                data-slick-index={17}
+                aria-hidden="true"
+                tabIndex={-1}
+              >
+                <a
+                  href="https://1k.by/usersshops/gotoshop?shopid=6777&categoryid=419"
+                  tabIndex={-1}
+                >
+                  <img
+                    src="https://1k.by/images/site/shopslogo/s176046755.png"
+                    alt="\u0415-\u0422\u0435\u0445\u043D\u043E"
+                  />
+                </a>
+              </div>
+              <div
+                className="slide slick-slide slick-cloned"
+                data-slick-index={18}
+                aria-hidden="true"
+                tabIndex={-1}
+              >
+                <a
+                  href="https://1k.by/usersshops/gotoshop?shopid=209&categoryid=419"
+                  tabIndex={-1}
+                >
+                  <img
+                    src="https://1k.by/images/site/shopslogo/s4a4a04628.png"
+                    alt="Ram.by"
+                  />
+                </a>
+              </div>
+              <div
+                className="slide slick-slide slick-cloned"
+                data-slick-index={19}
+                aria-hidden="true"
+                tabIndex={-1}
+              >
+                <a
+                  href="https://1k.by/usersshops/gotoshop?shopid=338&categoryid=419"
+                  tabIndex={-1}
+                >
+                  <img
+                    src="https://1k.by/images/site/shopslogo/sfe2e7f703.gif"
+                    alt="21vek.by"
+                  />
+                </a>
+              </div>
+              <div
+                className="slide slick-slide slick-cloned"
+                data-slick-index={20}
+                aria-hidden="true"
+                tabIndex={-1}
+              >
+                <a
+                  href="https://1k.by/usersshops/gotoshop?shopid=669&categoryid=419"
+                  tabIndex={-1}
+                >
+                  <img
+                    src="https://1k.by/images/site/shopslogo/s97544bf4a.gif"
+                    alt="TTN.by"
+                  />
+                </a>
+              </div>
+              <div
+                className="slide slick-slide slick-cloned"
+                data-slick-index={21}
+                aria-hidden="true"
+                tabIndex={-1}
+              >
+                <a
+                  href="https://1k.by/usersshops/gotoshop?shopid=2302&categoryid=419"
+                  tabIndex={-1}
+                >
+                  <img
+                    src="https://1k.by/images/site/shopslogo/sa8478f082.gif"
+                    alt="BITS.By"
+                  />
+                </a>
+              </div>
+              <div
+                className="slide slick-slide slick-cloned"
+                data-slick-index={22}
+                aria-hidden="true"
+                tabIndex={-1}
+              >
+                <a
+                  href="https://1k.by/usersshops/gotoshop?shopid=7037&categoryid=419"
+                  tabIndex={-1}
+                >
+                  <img
+                    src="https://1k.by/images/site/shopslogo/s93b55d78a.jpg"
+                    alt="24shop.by"
+                  />
+                </a>
+              </div>
+              <div
+                className="slide slick-slide slick-cloned"
+                data-slick-index={23}
+                aria-hidden="true"
+                tabIndex={-1}
+              >
+                <a
+                  href="https://1k.by/usersshops/gotoshop?shopid=406&categoryid=419"
+                  tabIndex={-1}
+                >
+                  <img
+                    src="https://1k.by/images/site/shopslogo/s8804bff4e.gif"
+                    alt="SLI.BY"
+                  />
+                </a>
+              </div>
+              <div
+                className="slide slick-slide slick-cloned"
+                data-slick-index={24}
+                aria-hidden="true"
+                tabIndex={-1}
+              >
+                <a
+                  href="https://1k.by/usersshops/gotoshop?shopid=439&categoryid=419"
+                  tabIndex={-1}
+                >
+                  <img
+                    src="https://1k.by/images/site/shopslogo/sc0eaa3688.jpg"
+                    alt="\u0418\u043D\u0432\u043E\u043A\u043E\u043C"
+                  />
+                </a>
+              </div>
+              <div
+                className="slide slick-slide slick-cloned"
+                data-slick-index={25}
+                aria-hidden="true"
+                tabIndex={-1}
+              >
+                <a
+                  href="https://1k.by/usersshops/gotoshop?shopid=784&categoryid=419"
+                  tabIndex={-1}
+                >
+                  <img
+                    src="https://1k.by/images/site/shopslogo/sb73d24571.jpg"
+                    alt="\u041D\u0418\u041A\u0421"
+                  />
+                </a>
+              </div>
+              <div
+                className="slide slick-slide slick-cloned"
+                data-slick-index={26}
+                aria-hidden="true"
+                tabIndex={-1}
+              >
+                <a
+                  href="https://1k.by/usersshops/gotoshop?shopid=2250&categoryid=419"
+                  tabIndex={-1}
+                >
+                  <img
+                    src="https://1k.by/images/site/shopslogo/s3e57a0875.gif"
+                    alt="\u0421\u0432\u044F\u0437\u043D\u043E\u0439"
+                  />
+                </a>
+              </div>
+              <div
+                className="slide slick-slide slick-cloned"
+                data-slick-index={27}
+                aria-hidden="true"
+                tabIndex={-1}
+              >
+                <a
+                  href="https://1k.by/usersshops/gotoshop?shopid=16&categoryid=419"
+                  tabIndex={-1}
+                >
+                  <img
+                    src="https://1k.by/images/site/shopslogo/sf0ffb27ac.gif"
+                    alt="UltraPrice"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+          <button
+            className="slick-next slick-arrow"
+            aria-label="Next"
+            type="button"
+            style={{
+              display: "block"
+            }}
+          >
+                       
+          </button>
+        </div>
+        <div className="more">
+          <a href="../utility-graphicscards-sellers/index.html">
+            Cмотреть подробную информацию о всех продавцах категории
+          </a>
+        </div>
+      </section>
+    );
+  }
+}
+
+export default Manufacturers
