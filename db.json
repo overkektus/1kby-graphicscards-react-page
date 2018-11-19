@@ -1,13 +1,27 @@
 {
-  "goods": [
-    { "id": "1", "categoryId": "1", "title": "Good 1" },
-    { "id": "2", "categoryId": "1", "title": "Good 2" },
-    { "id": "3", "categoryId": "1", "title": "Good 3" },
-    { "id": "4", "categoryId": "2", "title": "Good 4" },
-    { "id": "5", "categoryId": "2", "title": "Good 5" },
-    { "id": "6", "categoryId": "2", "title": "Good 6" },
-    { "id": "7", "categoryId": "3", "title": "Good 7" },
-    { "id": "8", "categoryId": "3", "title": "Good 8" },
-    { "id": "9", "categoryId": "3", "title": "Good 9" }
+  "graphicscards": [
+    {
+      "id": 1,
+      "name": "Видеокарта GIGABYTE GeForce GTX 1050 Ti 1316Mhz PCI-E 3.0 4096Mb 7008Mhz 128 bit DVI HDMI HDCP OC",
+      "manufacturerId": 3,
+      "type": "игровая",
+      "nameVideoProcessor": "NVIDIA GeForce GTX 1050",
+      "slots": 2,
+      "memoryType": "GDDR5",
+      "memorySize": 2048,
+      "memoryBys": 128,
+      "lowProfile": false,
+      "sli": false,
+      "directXsupport": "12",
+      "vga": false,
+      "hdmi": true,
+      "miniHdmi": false,
+      "displayPort": true,
+      "additionalElectricalPower": false,
+      "minCashPrice": 100,
+      "maxCashPrice": 200,
+      "minCashlessPrice": 110,
+      "maxCashlessPrice": 100
+    }
   ]
 }
