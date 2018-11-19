@@ -7,7 +7,7 @@ export const REDUCER = 'GRAPHICSCARDS'
 const NS = `${REDUCER}__`
 
 const initialState ={
-  data: {},
+  data: [],
   isLoading: false,
 }
 
@@ -22,6 +22,7 @@ reducer.on(readRequest, state => ({
 const readSuccess = createAction(`${NS}READ_SUCCESS`)
 reducer.on(readSuccess, (state, items) => ({
   ...state,
+  data: items,
   isLoading: false
 }))
 
@@ -31,11 +32,12 @@ reducer.on(readFailure, (state) => ({
   isLoading: false
 }))
 
-export const readGoods = () => dispatch => {
+export const readGraphicscards = () => dispatch => {
   dispatch(readRequest())
   return axios
     .get(`${API}graphicscards/`)
     .then(({ status, statusText, data }) => {
+      console.log(data)
       if(status !== 200) {
         throw new Error(statusText)
       }

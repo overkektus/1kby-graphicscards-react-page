@@ -1,9 +1,26 @@
 import React from 'react'
+import { connect } from 'react-redux'
 import Product from 'components/Product'
 import Manufacturers from './Manufacturers'
+import { dispatch } from 'store'
+import { readGraphicscards } from 'ducks/graphicscards'
 
 class Content extends React.Component {
+  componentWillMount(){
+    dispatch(readGraphicscards())
+  }
   render() {
+    const { graphicscards } = this.props
+    const graphicscardsToRender = graphicscards.map(card => (
+      <Product
+        name={card.name}
+        imgUrl={card.imgUrl}
+        minCashPrice={card.minCashPrice}
+        maxCashPrice={card.maxCashPrice}
+        minCashlessPrice={card.minCashlessPrice}
+        maxCashlessPrice={card.maxCashlessPrice}
+      />
+    ))
     return (
       <main className="content">
         <section className="filter">
@@ -16,17 +33,17 @@ class Content extends React.Component {
               onfocus="this.style.color='#333333';"
               onblur="this.style.color='#333333';"
             >
-              <option value="titleasc">названию А-Я</option>
-              <option value="titledesc">названию Я-А</option>
-              <option selected="selected" value="top">
+              <option defaultValue="titleasc">названию А-Я</option>
+              <option defaultValue="titledesc">названию Я-А</option>
+              <option value="selected" defaultValue="top">
                 популярности
               </option>
-              <option value="priceasc">розничной цене начать с дешевых</option>
-              <option value="pricedesc">розничной цене начать с дорогих</option>
-              <option value="pricecashlessasc">
+              <option defaultValue="priceasc">розничной цене начать с дешевых</option>
+              <option defaultValue="pricedesc">розничной цене начать с дорогих</option>
+              <option defaultValue="pricecashlessasc">
                 безналичной цене начать с дешевых
               </option>
-              <option value="pricecashlessdesc">
+              <option defaultValue="pricecashlessdesc">
                 безналичной цене начать с дорогих
               </option>
             </select>{" "}
@@ -53,7 +70,7 @@ class Content extends React.Component {
           </section>
         </section>
         <section className="items">
-          <Product />
+          {graphicscardsToRender}
           <Manufacturers />
           <div
             className="checkboxCompareMain"
@@ -91,7 +108,7 @@ class Content extends React.Component {
             </li>
             <li>
               <a href="page2.html" className="rightButton">
-                 
+
               </a>{" "}
             </li>
           </ul>
@@ -102,4 +119,10 @@ class Content extends React.Component {
   }
 }
 
-export default Content
+const mapStateToProps = (state) => {
+  return {
+    graphicscards: state.graphicscards.data
+  }
+}
+
+export default connect(mapStateToProps)(Content)
