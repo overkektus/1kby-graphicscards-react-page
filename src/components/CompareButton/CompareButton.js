@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 
 class CompareButton extends React.Component {
   render() {
@@ -9,8 +9,8 @@ class CompareButton extends React.Component {
         </span>
         <span data-action="clear_compare" data-categoryid={419} />
       </div>
-    );
+    )
   }
 }
 
-export default CompareButton;
+export default CompareButton

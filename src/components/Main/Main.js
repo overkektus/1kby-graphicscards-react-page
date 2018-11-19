@@ -1,7 +1,7 @@
-import React from "react";
-import Sidebar from "../Sidebar";
-import Content from "../Content";
-import CompareButton from "../CompareButton";
+import React from 'react'
+import Sidebar from '../Sidebar'
+import Content from '../Content'
+import CompareButton from '../CompareButton'
 
 class Main extends React.Component {
   render() {
@@ -50,8 +50,8 @@ class Main extends React.Component {
           <CompareButton />
         </section>{" "}
       </div>
-    );
+    )
   }
 }
 
-export default Main;
+export default Main

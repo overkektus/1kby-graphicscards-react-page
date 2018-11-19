@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 
 class Header extends React.Component {
   render() {
@@ -188,24 +188,13 @@ class Header extends React.Component {
             Зарегистрироваться
           </a>
           <div className="auth_social">
-            <a
-              className="auth_vk"
-              href="https://1k.by/users/auth-social?provider=vkontakte"
-            />
-            <a
-              className="auth_tw"
-              href="https://1k.by/users/auth-social?provider=twitter"
-            />
-            <a
-              className="auth_fb"
-              href="https://1k.by/users/auth-social?provider=facebook"
-            />
+
           </div>
         </div>
         {}{" "}
       </div>
-    );
+    )
   }
 }
 
-export default Header;
+export default Header

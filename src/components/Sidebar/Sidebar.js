@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 
 class Sidebar extends React.Component {
   render() {
@@ -195,7 +195,7 @@ class Sidebar extends React.Component {
                           onclick="getNotIntervalProductsNum(this.id);"
                         />
                         <i>
-                          <img src="https://1k.by/images/site/productsproducers/v809afa83b.jpg" />
+                          <img src="https://1k.by/images/site/productsproducers/v809afa83b.jpg" alt="ASUS logo"/>
                         </i>
                         <span className="cbx_txt" data-producervalueid={47}>
                           ASUS <sup className="cbx_sup facet_cnt">104</sup>
@@ -211,7 +211,7 @@ class Sidebar extends React.Component {
                           onclick="getNotIntervalProductsNum(this.id);"
                         />
                         <i>
-                          <img src="https://1k.by/images/site/productsproducers/vc422b294e.jpg" />
+                          <img src="https://1k.by/images/site/productsproducers/vc422b294e.jpg" alt="GigaByte logo" />
                         </i>
                         <span className="cbx_txt" data-producervalueid={56}>
                           GigaByte <sup className="cbx_sup facet_cnt">97</sup>
@@ -227,7 +227,7 @@ class Sidebar extends React.Component {
                           onclick="getNotIntervalProductsNum(this.id);"
                         />
                         <i>
-                          <img src="https://1k.by/images/site/productsproducers/v1a6ada1a5.png" />
+                          <img src="https://1k.by/images/site/productsproducers/v1a6ada1a5.png" alt="MSI logo"/>
                         </i>
                         <span className="cbx_txt" data-producervalueid={1050}>
                           MSI <sup className="cbx_sup facet_cnt">101</sup>
@@ -243,7 +243,7 @@ class Sidebar extends React.Component {
                           onclick="getNotIntervalProductsNum(this.id);"
                         />
                         <i>
-                          <img src="https://1k.by/images/site/productsproducers/v161968a4f.jpg" />
+                          <img src="https://1k.by/images/site/productsproducers/v161968a4f.jpg" alt="Palit logo"/>
                         </i>
                         <span className="cbx_txt" data-producervalueid={193}>
                           Palit <sup className="cbx_sup facet_cnt">59</sup>
@@ -259,7 +259,7 @@ class Sidebar extends React.Component {
                           onclick="getNotIntervalProductsNum(this.id);"
                         />
                         <i>
-                          <img src="https://1k.by/images/site/productsproducers/v57efb233c.png" />
+                          <img src="https://1k.by/images/site/productsproducers/v57efb233c.png" alt="Inno3D logo"/>
                         </i>
                         <span className="cbx_txt" data-producervalueid={1044}>
                           Inno3D <sup className="cbx_sup facet_cnt">42</sup>
@@ -275,7 +275,7 @@ class Sidebar extends React.Component {
                           onclick="getNotIntervalProductsNum(this.id);"
                         />
                         <i>
-                          <img src="https://1k.by/images/site/productsproducers/v74e439030.gif" />
+                          <img src="https://1k.by/images/site/productsproducers/v74e439030.gif" alt="Sapphire logo"/>
                         </i>
                         <span className="cbx_txt" data-producervalueid={197}>
                           Sapphire <sup className="cbx_sup facet_cnt">44</sup>
@@ -305,7 +305,7 @@ class Sidebar extends React.Component {
                           onclick="getNotIntervalProductsNum(this.id);"
                         />
                         <i>
-                          <img src="https://1k.by/images/site/productsproducers/v880021ad9.gif" />
+                          <img src="https://1k.by/images/site/productsproducers/v880021ad9.gif" alt="PNY logo"/>
                         </i>
                         <span className="cbx_txt" data-producervalueid={192}>
                           PNY <sup className="cbx_sup facet_cnt">28</sup>
@@ -321,7 +321,7 @@ class Sidebar extends React.Component {
                           onclick="getNotIntervalProductsNum(this.id);"
                         />
                         <i>
-                          <img src="https://1k.by/images/site/productsproducers/v98bca253d.jpg" />
+                          <img src="https://1k.by/images/site/productsproducers/v98bca253d.jpg" alt="Gainward logo"/>
                         </i>
                         <span className="cbx_txt" data-producervalueid={185}>
                           Gainward <sup className="cbx_sup facet_cnt">10</sup>
@@ -2692,8 +2692,8 @@ class Sidebar extends React.Component {
           </div>
         </div>
       </aside>
-    );
+    )
   }
 }
 
-export default Sidebar;
+export default Sidebar
