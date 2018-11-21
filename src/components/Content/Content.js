@@ -1,14 +1,22 @@
 import React from 'react'
 import { connect } from 'react-redux'
+import { Select, Icon, Pagination } from 'antd'
 import Product from 'components/Product'
 import Manufacturers from './Manufacturers'
 import { dispatch } from 'store'
 import { readGraphicscards } from 'ducks/graphicscards'
 
+const { Option } = Select
+
 class Content extends React.Component {
   componentWillMount(){
     dispatch(readGraphicscards())
   }
+
+  onPaginationChange = () => {
+
+  }
+
   render() {
     const { graphicscards } = this.props
     const graphicscardsToRender = graphicscards.map(card => (
@@ -23,47 +31,61 @@ class Content extends React.Component {
     ))
     return (
       <main className="content">
-        <section className="filter">
-          <section className="filterRow">
+        <section
+          className="filter"
+          style={{
+            display: 'flex',
+            justifyContent: 'space-between'
+          }}>
+          <section
+            className="filterRow"
+            style={{
+              display: 'flex',
+              justifyContent: 'space-between',
+              alignItems: 'center',
+              width: '240px'
+            }}
+          >
             <div>Сортировать по</div>
-            <select
-              id="f2778003"
-              className="select select_orig"
-              name="order"
-              onfocus="this.style.color='#333333';"
-              onblur="this.style.color='#333333';"
-            >
-              <option defaultValue="titleasc">названию А-Я</option>
-              <option defaultValue="titledesc">названию Я-А</option>
-              <option value="selected" defaultValue="top">
-                популярности
-              </option>
-              <option defaultValue="priceasc">розничной цене начать с дешевых</option>
-              <option defaultValue="pricedesc">розничной цене начать с дорогих</option>
-              <option defaultValue="pricecashlessasc">
-                безналичной цене начать с дешевых
-              </option>
-              <option defaultValue="pricecashlessdesc">
-                безналичной цене начать с дорогих
-              </option>
-            </select>{" "}
+            <Select defaultValue="titleasc" className="select select_orig">
+              <Option value="titleasc">названию А-Я</Option>
+              <Option value="titledesc">названию Я-А</Option>
+              <Option value="top">популярности</Option>
+              <Option value="priceasc">розничной цене начать с дешевых</Option>
+              <Option value="pricedesc">розничной цене начать с дорогих</Option>
+              <Option value="pricecashlessasc">безналичной цене начать с дешевых</Option>
+              <Option value="pricecashlessdesc">безналичной цене начать с дорогих</Option>
+            </Select>
           </section>
-          <section className="view">
+          <section
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'flex-end'
+            }}
+          >
             <span>Вид</span>
-            <ul>
+            <ul
+              style={{
+                display: 'flex'
+              }}
+            >
               <li>
-                <span
-                  className="st1 active"
+                <Icon
+                  type="bars"
+                  style={{fontSize: '3.5em', color: '#0099FF'}}
                 />
               </li>
               <li>
-                <span
-                  className="st2"
+                <Icon
+                  type="appstore"
+                  style={{fontSize: '3.3em', color: '#C5D5E3'}}
                 />
               </li>
               <li>
-                <span
-                  className="st3"
+                <Icon
+                  type="table"
+                  style={{fontSize: '3.4em', color: '#C5D5E3'}}
                 />
               </li>
             </ul>
@@ -83,37 +105,13 @@ class Content extends React.Component {
             выберите минимум 2 товара
           </div>
         </section>
-        <section className="pagination">
-          <ul>
-            <li>
-              <span className="active">1</span>
-            </li>
-            <li>
-              <a href="page2.html">2</a>
-            </li>
-            <li>
-              <a href="page3.html">3</a>
-            </li>
-            <li>
-              <a href="page4.html">4</a>
-            </li>
-            <li>
-              <a href="page5.html">5</a>
-            </li>
-            <li>
-              <span>...</span>
-            </li>
-            <li>
-              <a href="page23.html">23</a>{" "}
-            </li>
-            <li>
-              <a href="page2.html" className="rightButton">
-
-              </a>{" "}
-            </li>
-          </ul>
+        <section style={{
+          display: 'flex',
+          justifyContent: 'center',
+          padding: '20px'
+        }}>
+          <Pagination showQuickJumper defaultCurrent={2} total={500} onChange={this.onPaginationChange} />
         </section>
-
       </main>
     )
   }

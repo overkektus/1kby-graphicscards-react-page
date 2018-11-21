@@ -1,7 +1,11 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 class Product extends React.Component {
   render() {
+    const {
+      name, imgUrl, minCashPrice, maxCashPrice,
+      minCashlessPrice, maxCashlessPrice } = this.props
     return (
       <section
         className="item-box active product_block"
@@ -22,13 +26,11 @@ class Product extends React.Component {
             >
               <span
                 className="colorbox_group_2594669"
-                data-imageindex={0}
-                data-srcbig="https://static.1k.by/images/products/ip/big/ppf/f/2594669/i1b633bfbc.jpg"
               >
                 <img
                   title="ASUS GeForce GTX 1060 1506Mhz PCI-E 3.0 6144Mb 8008Mhz 192 bit DVI 2xHDMI HDCP"
                   alt="ASUS GeForce GTX 1060 1506Mhz PCI-E 3.0 6144Mb 8008Mhz 192 bit DVI 2xHDMI HDCP"
-                  src="https://static.1k.by/images/products/ip/125/ppf/f/2594669/i1b633bfbc.jpg"
+                  src={imgUrl}
                 />{" "}
               </span>
             </a>
@@ -38,8 +40,6 @@ class Product extends React.Component {
                 <input
                   className="checkbox cbx_inp"
                   name="compareproductsids"
-                  data-productid={2594669}
-                  data-categoryid={419}
                   defaultValue={1}
                   type="checkbox"
                 />
@@ -57,8 +57,7 @@ class Product extends React.Component {
           <section className="item-description-box">
             <div className="item-title">
               <a href="asus/ASUS_GeForce_GTX_1060_1506Mhz_PCI_E_30_6144Mb_8008Mhz_192_bit_DVI_2xHDMI_HDCP-2594669.html">
-                Видеокарта ASUS GeForce GTX 1060 1506Mhz PCI-E 3.0 6144Mb
-                8008Mhz 192 bit DVI 2xHDMI HDCP
+                {name}
               </a>
             </div>
             <div className="item-info">
@@ -80,7 +79,7 @@ class Product extends React.Component {
             <p>
               Розница{" "}
               <a href="asus/ASUS_GeForce_GTX_1060_1506Mhz_PCI_E_30_6144Mb_8008Mhz_192_bit_DVI_2xHDMI_HDCP-2594669/offers/index.html">
-                690,00 – 1 032,86
+                {minCashPrice} – {maxCashPrice}
               </a>{" "}
               б.р.
             </p>
@@ -90,7 +89,7 @@ class Product extends React.Component {
                 href="asus/ASUS_GeForce_GTX_1060_1506Mhz_PCI_E_30_6144Mb_8008Mhz_192_bit_DVI_2xHDMI_HDCP-2594669/beznal/index.html"
                 className="cash"
               >
-                784,22 – 1 032,86
+                {minCashlessPrice} – {maxCashlessPrice}
               </a>{" "}
               б.р.
             </p>
@@ -104,6 +103,15 @@ class Product extends React.Component {
       </section>
     )
   }
+}
+
+Product.proptypes = {
+  name: PropTypes.string.isRequired,
+  imgUrl: PropTypes.string.isRequired,
+  minCashPrice: PropTypes.number.isRequired,
+  maxCashPrice: PropTypes.number.isRequired,
+  minCashlessPrice: PropTypes.number.isRequired,
+  maxCashlessPrice: PropTypes.number.isRequired
 }
 
 export default Product

@@ -5,14 +5,14 @@ import { ConnectedRouter } from 'connected-react-router'
 import { renderRoutes } from 'react-router-config'
 import routes from './routes'
 import configureStore, { history } from './store'
-import './index.css'
 import * as serviceWorker from './serviceWorker'
+import 'antd/dist/antd.css'
 
 const store = configureStore()
 
 ReactDOM.render(
   <Provider store={store}>
-      <ConnectedRouter history={history}>{renderRoutes(routes)}</ConnectedRouter>
+    <ConnectedRouter history={history}>{renderRoutes(routes)}</ConnectedRouter>
   </Provider>,
   document.getElementById('root')
 )
