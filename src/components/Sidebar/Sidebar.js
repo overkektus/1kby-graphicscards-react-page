@@ -38,7 +38,7 @@ const reviewsGraphicscards = [
 class Sidebar extends React.Component {
   render() {
     return (
-      <aside className="left">
+      <aside className="left" style={{ flex: '0 0 272px' }}>
         <Form />
         <div className="topArticle">
           <div className="box_body box_body_sidebar">

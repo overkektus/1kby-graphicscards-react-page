@@ -6,9 +6,10 @@ import { API } from '../service'
 export const REDUCER = 'GRAPHICSCARDS'
 const NS = `${REDUCER}__`
 
-const initialState ={
+const initialState = {
   data: [],
   isLoading: false,
+  viewType: 'standart'
 }
 
 const reducer = createReducer({}, initialState)
@@ -32,7 +33,7 @@ reducer.on(readFailure, (state) => ({
   isLoading: false
 }))
 
-export const readGraphicscards = () => dispatch => {
+export const readGraphicscards = () => (dispatch) => {
   dispatch(readRequest())
   return axios
     .get(`${API}graphicscards/`)
@@ -47,6 +48,16 @@ export const readGraphicscards = () => dispatch => {
       dispatch(readFailure())
       return Promise.reject(error)
     })
+}
+
+const setView = createAction(`${NS}SET_VIEW`)
+reducer.on(setView, (state, viewType) => ({
+  ...state,
+  viewType
+}))
+
+export const changeView = (viewType) => (dispatch) => {
+  dispatch(setView(viewType))
 }
 
 export default reducer

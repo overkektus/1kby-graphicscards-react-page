@@ -1,14 +1,20 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { Collapse, Button, Input, InputNumber, Select } from 'antd'
+import { Collapse, Button, AutoComplete, Select } from 'antd'
 import ButtonWithBadge from './ButtonWithBadge'
+import InputFromTo from './InputFromTo'
 import YesOrNo from './YesOrNo'
+import SelectFromTo from './SelectFromTo'
 import ItemsList from './ItemsList'
 
 const { Panel } = Collapse
 const { Option } = Select
 
 class Form extends Component {
+  vgaChangeHandler() {
+
+  }
+
   render() {
     const { opened } = this.props
     return(
@@ -22,19 +28,10 @@ class Form extends Component {
           <section id="parameters-box">
             <Collapse defaultActiveKey={opened} >
               <Panel key="search" header="Поиск по названию" >
-                <Input/>
+                <AutoComplete/>
               </Panel>
               <Panel key="price" header="Цена, б.р.">
-                <div style={{ display: 'flex', alignItems: 'center'}}>
-                  <div style={{ display: 'flex' }}>
-                    <p style={{ margin: '0'}}>от</p>
-                    <InputNumber/>
-                  </div>
-                  <div style={{ display: 'flex', alignItems: 'center'}}>
-                    <p style={{ margin: '0'}}>до</p>
-                    <InputNumber/>
-                  </div>
-                </div>
+                <InputFromTo/>
               </Panel>
               <Panel key="showGoods" header="Показывать товары">
                 <Select>
@@ -549,120 +546,48 @@ class Form extends Component {
                 <ButtonWithBadge count="76">HBM2</ButtonWithBadge>
               </Panel>
               <Panel key="sizeOfMemory" header="Объем памяти">
-                <Select>
-                  <Option value="256">256</Option>
-                  <Option value="512">512</Option>
-                  <Option value="1024">1024</Option>
-                  <Option value="2048">2048</Option>
-                  <Option value="3072">3072</Option>
-                  <Option value="4096">4096</Option>
-                  <Option value="6144">6144</Option>
-                  <Option value="8000">8000</Option>
-                  <Option value="8008">8008</Option>
-                  <Option value="8192">8192</Option>
-                  <Option value="11264">11264</Option>
-                  <Option value="12288">12288</Option>
-                  <Option value="16384">16384</Option>
-                  <Option value="24576">24576</Option>
-                </Select>
-                <Select>
-                  <Option value="256">256</Option>
-                  <Option value="512">512</Option>
-                  <Option value="1024">1024</Option>
-                  <Option value="2048">2048</Option>
-                  <Option value="3072">3072</Option>
-                  <Option value="4096">4096</Option>
-                  <Option value="6144">6144</Option>
-                  <Option value="8000">8000</Option>
-                  <Option value="8008">8008</Option>
-                  <Option value="8192">8192</Option>
-                  <Option value="11264">11264</Option>
-                  <Option value="12288">12288</Option>
-                  <Option value="16384">16384</Option>
-                  <Option value="24576">24576</Option>
-                </Select>
+                <SelectFromTo
+                  source={[
+                    '256',
+                    '512',
+                    '1024',
+                    '2048',
+                    '3072',
+                    '4096',
+                    '6144',
+                    '8000',
+                    '8008',
+                    '8192',
+                    '11264',
+                    '12288',
+                    '16384',
+                    '24576'
+                  ]}
+                />
               </Panel>
               <Panel key="memoryBus" header="Шина обмена с памятью">
-                <fieldset
-                  className="ver-filter_row select"
-                  data-parameterid={4198}
-                >
-                  <div className="ver-filter_box">
-                    <div className="b-row row-cells-2">
-                      <label className="row_note">бит</label>
-                      <div className="row_in">
-                        <label className="row_cell">
-                          <b className="row_cap">от</b>
-                          <span className="row_el">
-                            <select
-                              id="from_el_4198"
-                              className="row_sel"
-                              name="from_el_4198"
-                              onFocus="this.style.color='#333333';"
-                              onBlur="this.style.color='#333333';"
-                            >
-                              <option value="selected" defaultValue />
-                              <option defaultValue={32}>32</option>
-                              <option defaultValue={64}>64</option>
-                              <option defaultValue={96}>96</option>
-                              <option defaultValue={128}>128</option>
-                              <option defaultValue={160}>160</option>
-                              <option defaultValue={192}>192</option>
-                              <option defaultValue={256}>256</option>
-                              <option defaultValue={320}>320</option>
-                              <option defaultValue={352}>352</option>
-                              <option defaultValue={384}>384</option>
-                              <option defaultValue={448}>448</option>
-                              <option defaultValue={512}>512</option>
-                              <option defaultValue={768}>768</option>
-                              <option defaultValue={896}>896</option>
-                              <option defaultValue={1024}>1024</option>
-                              <option defaultValue={2048}>2048</option>
-                              <option className="is-empty" defaultValue={4096}>
-                                4096
-                              </option>
-                              <option className="is-empty" defaultValue={8192}>
-                                8192
-                              </option>
-                            </select>{" "}
-                          </span>
-                        </label>
-                        <label className="row_cell">
-                          <b className="row_cap">до</b>
-                          <span className="row_el">
-                            <select
-                              id="to_el_4198"
-                              className="row_sel"
-                              name="to_el_4198"
-                              onFocus="this.style.color='#333333';"
-                              onBlur="this.style.color='#333333';"
-                            >
-                              <option value="selected" defaultValue />
-                              <option defaultValue={32}>32</option>
-                              <option defaultValue={64}>64</option>
-                              <option defaultValue={96}>96</option>
-                              <option defaultValue={128}>128</option>
-                              <option defaultValue={160}>160</option>
-                              <option defaultValue={192}>192</option>
-                              <option defaultValue={256}>256</option>
-                              <option defaultValue={320}>320</option>
-                              <option defaultValue={352}>352</option>
-                              <option defaultValue={384}>384</option>
-                              <option defaultValue={448}>448</option>
-                              <option defaultValue={512}>512</option>
-                              <option defaultValue={768}>768</option>
-                              <option defaultValue={896}>896</option>
-                              <option defaultValue={1024}>1024</option>
-                              <option defaultValue={2048}>2048</option>
-                              <option defaultValue={4096}>4096</option>
-                              <option defaultValue={8192}>8192</option>
-                            </select>{" "}
-                          </span>
-                        </label>
-                      </div>
-                    </div>
-                  </div>
-                </fieldset>
+                <SelectFromTo
+                  source={[
+                    '32',
+                    '64',
+                    '96',
+                    '128',
+                    '160',
+                    '192',
+                    '256',
+                    '320',
+                    '352',
+                    '384',
+                    '448',
+                    '512',
+                    '768',
+                    '896',
+                    '1024',
+                    '2048',
+                    '4096',
+                    '8192'
+                  ]}
+                />
               </Panel>
               <Panel key="lowProfile" header="Низкопрофильная карта (Low Profile)">
                 <YesOrNo yesCount="10" noCount="20"/>
@@ -705,7 +630,11 @@ class Form extends Component {
                 />
               </Panel>
               <Panel key="vga" header="Выход VGA">
-                <YesOrNo yesCount="10" noCount="20"/>
+                <YesOrNo
+                  onChange={this.vgaChangeHandler}
+                  yesCount="10"
+                  noCount="20"
+                />
               </Panel>
               <Panel key="hdmi" header="Выход HDMI">
                 <YesOrNo yesCount="10" noCount="20"/>

@@ -1,0 +1,10 @@
+.change-view-icon {
+  font-size: 3.5em;
+  margin-right: 10px;
+  color: #C5D5E3;
+  cursor: pointer;
+}
+
+.change-view-icon:hover {
+  color: #0099FF;
+}

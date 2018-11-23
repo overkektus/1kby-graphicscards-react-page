@@ -31,7 +31,7 @@ class Main extends React.Component {
           <Sidebar />
           <Content />
           <CompareButton />
-        </section>{" "}
+        </section>
       </div>
     )
   }

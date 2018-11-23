@@ -1,9 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Button, Badge } from 'antd'
+import './ButtonWithBadge.css'
 
 const ButtonWithBadge = ({ children, count}) => (
-  <Button>
+  <Button className='button-with-badge'>
     {children}
     <Badge
       count={count}
@@ -20,7 +21,8 @@ const ButtonWithBadge = ({ children, count}) => (
 
 ButtonWithBadge.propTypes = {
   children: PropTypes.string.isRequired,
-  count: PropTypes.number.isRequired
+  count: PropTypes.number.isRequired,
+  onClick: PropTypes.func.isRequired
 }
 
 export default ButtonWithBadge

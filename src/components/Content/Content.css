@@ -1,0 +1,11 @@
+.filter--custom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filter-row--custom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 250px;
+}
